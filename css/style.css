@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* height: 100vh;
+    display: flex; */
+    align-items: center;
+    justify-content: center;
+    background: #161616;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    column-gap: 5px;
+    row-gap: 5px;
+    
+}
+
+.coin {
+    display: flex;
+    width: 460px;
+    height: 100px;
+    border-radius: 8px;
+    margin: 38px 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.coin .coin-logo {
+    width: 100px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.coin .coin-logo img {
+    width: 70%;
+    height: 70%;
+}
+
+.coin .coin-name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.coin .coin-name h3 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.coin .coin-name span {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 6px 0 0 2px;
+}
+
+.coin .coin-price {
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 22px 0 0;
+    text-align: right;
+}
+
+.coin .coin-price .price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: -6px;
+}
+
+.coin .coin-price .change {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.coin.rising {
+    background: linear-gradient(
+        90deg, #202022, #4eb64510
+    );
+}
+
+.coin.rising .coin-price .price {
+    color: #30ff20;
+}
+
+.coin.falling {
+    background: linear-gradient(
+        90deg, #202022, #aa444425
+    );
+}
+
+.coin.falling .coin-price .price {
+    color: #ff4040;
+}
+
+/* Header */
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.bar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.navbar-list{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Hero Content */
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20;
+    justify-content: center;
+}
+
+.hero-content{
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 40px;  
+    margin-bottom: 20px;  
+}
+.hero-content p{
+    font-size: 25px;
+    white-space: wrap;
+}
+
+.her0-banner img{
+    animation: moveImage 1s linear infinite alternate;
+}
+
+@keyframes moveImage {
+    0%,50%{
+        /* transform: translateX(-50%); */
+       transform: translateX(-250px);
+    }
+}
+
+.crypto{
+    color: white;
+    text-transform: capitalize;
+    
+}
